@@ -1,0 +1,54 @@
+{
+    "id": {
+        "type": "string",
+        "empty": false,
+        "required": true
+    },
+    "app": {
+        "type": "dict",
+        "schema": {
+            "id": {
+                "type": "string",
+                "empty": false,
+                "required": true
+            },
+            "name": {
+                "type": "string",
+                "empty": false,
+                "required": true
+            }
+        },
+        "required": true
+    },
+    "device": {
+        "type": "dict",
+        "schema": {
+            "os": {
+                "type": "string",
+                "allowed": [
+                    "Android",
+                    "iOS"
+                ],
+                "required": true
+            },
+            "geo": {
+                "type": "dict",
+                "schema": {
+                    "country": {
+                        "type": "string",
+                        "empty": false,
+                        "required": true
+                    },
+                    "lat": {
+                        "type": "number"
+                    },
+                    "lon": {
+                        "type": "number"
+                    }
+                },
+                "required": true
+            }
+        },
+        "required": true
+    }
+}

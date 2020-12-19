@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pprint = "*"
+
+[packages]
+flask = "*"
+pyyaml = "*"
+flask-restplus = "*"
+werkzeug = "==0.16.0"
+requests = "*"
+cerberus = "*"
+pytest = "*"
+
+[requires]
+python_version = "3.7"

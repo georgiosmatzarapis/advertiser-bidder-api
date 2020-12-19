@@ -1,0 +1,13 @@
+app:
+  secret_key: "f1a68b0cbdd1d9fea465a6840a7ffdb9"
+api:
+  request_schema_path: "main/rest_api/bidder/files/request_schema.json"
+  request_validator_path: "main/rest_api/bidder/files/request_validator.json"
+  campaign_validator_path: "main/rest_api/bidder/files/campaign_validator.json"
+  campaign_data_path: "main/rest_api/campaign/files/campaign_data.json"
+  campaign_api_prefix: "api/Campaign/campaign_data"
+  bid_request_prefix: "/api/Bidder/bid_request"
+logging:
+  file_path: "main/logs/bidder.log"
+  level: "DEBUG"
+  format: "[%(asctime)s | %(levelname)s | %(name)s]: %(message)s"
